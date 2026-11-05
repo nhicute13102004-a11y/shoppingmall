@@ -1,0 +1,242 @@
+
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "맑은 고딕", sans-serif;
+    color: #444;
+    background: #ffffff;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* 상단 헤더 */
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #648bbd;
+}
+
+.search {
+    display: flex;
+    width: 350px;
+}
+
+.search input {
+    width: 290px;
+    height: 38px;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search button {
+    width: 60px;
+    border: none;
+    background: #8aadd5;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.header-menu a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 13px;
+}
+
+/* 강아지 고양이 메뉴 */
+.animal-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 22px;
+}
+
+.animal-menu a {
+    width: 130px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    background: #f1f3f6;
+    color: #555555;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.animal-menu a.active {
+    background: #82a9d5;
+    color: white;
+}
+
+/* 카테고리 */
+.category {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.category a {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #555555;
+}
+
+.category span {
+    font-size: 28px;
+}
+
+.category p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* 메인 배너 */
+.banner {
+    height: 230px;
+    margin: 25px 0;
+    padding: 35px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dceafa;
+    border-radius: 8px;
+}
+
+.banner-text > p:first-child {
+    color: #7293ba;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.banner-text h1 {
+    color: #405e83;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.banner-text > p {
+    margin-top: 10px;
+    color: #617d9e;
+    font-size: 13px;
+}
+
+.banner-text a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #5279a6;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.banner-image {
+    font-size: 85px;
+}
+
+/* 상품 영역 */
+.product-section {
+    margin-top: 35px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    font-size: 21px;
+}
+
+.section-title a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* 상품 목록 */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.product {
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    background: white;
+}
+
+.product img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    background: #f7edf0;
+}
+
+.product h3 {
+    margin: 12px 0 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.product .price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product > a {
+    display: block;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+}
+
+.product > a:hover {
+    background: #e5effb;
+    color: #5279a6;
+}
+
+/* 하단 */
+footer {
+    margin-top: 55px;
+    padding: 30px;
+    background: #f5f6f8;
+    color: #888888;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+
+footer h3 {
+    color: #648bbd;
+    margin-bottom: 8px;
+}
